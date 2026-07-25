@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi — QadhaKu / Privacy Policy — QadhaKu</title>
+<style>
+  :root {
+    --green: #0B6E4F;
+    --green-strong: #0A5C42;
+    --bg: #EDF3EF;
+    --surface: #FFFFFF;
+    --text: #1B1A18;
+    --muted: #5c5a54;
+    --border: #e2ded6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+  header {
+    background: linear-gradient(135deg, var(--green), var(--green-strong));
+    color: #fff; padding: 40px 20px; text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.5px; }
+  header p { margin: 0; opacity: 0.9; font-size: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 24px 26px; margin: 18px 0;
+  }
+  h2 { color: var(--green-strong); font-size: 20px; margin: 28px 0 10px; letter-spacing: -0.3px; }
+  p, li { color: var(--text); font-size: 15px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  a { color: var(--green); }
+  .lang-toggle { text-align: center; margin: 24px 0 0; }
+  .lang-toggle button {
+    border: 1px solid var(--green); background: transparent; color: var(--green);
+    padding: 8px 20px; border-radius: 20px; font-weight: 700; cursor: pointer;
+    font-size: 14px; margin: 0 4px;
+  }
+  .lang-toggle button.active { background: var(--green); color: #fff; }
+  section[hidden] { display: none; }
+  .divider { height: 1px; background: var(--border); margin: 30px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>QadhaKu</h1>
+  <p>Kebijakan Privasi &middot; Privacy Policy</p>
+</header>
+
+<div class="wrap">
+  <div class="lang-toggle">
+    <button id="btn-id" class="active" onclick="setLang('id')">Bahasa Indonesia</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============ INDONESIA ============ -->
+  <section id="id">
+    <p class="muted" style="text-align:center; margin-top:20px;">Terakhir diperbarui: 24 Juli 2026</p>
+
+    <div class="card">
+      <p>QadhaKu ("aplikasi", "kami") adalah aplikasi untuk membantu pengguna menghitung, melacak, dan menyelesaikan qadha sholat dan puasa. Kami menghormati privasimu. Kebijakan ini menjelaskan data apa yang kami tangani, bagaimana penggunaannya, dan hak-hakmu.</p>
+    </div>
+
+    <h2>1. Data yang Kami Simpan</h2>
+    <p>Secara bawaan, QadhaKu menyimpan datamu di <strong>penyimpanan lokal perangkatmu</strong>, meliputi:</p>
+    <ul>
+      <li>Catatan qadha sholat dan qadha puasa</li>
+      <li>Target harian dan progres</li>
+      <li>Pengaturan pengingat, tema, dan bahasa</li>
+      <li>Nama yang kamu masukkan dan bookmark panduan</li>
+    </ul>
+    <p>Data ini tetap di perangkatmu kecuali kamu memilih untuk masuk (sign in) demi sinkronisasi cloud.</p>
+
+    <h2>2. Akun Google (Opsional)</h2>
+    <p>Jika kamu memilih masuk dengan Google, kami membaca <strong>nama dan alamat email</strong>-mu untuk menampilkan profil dan menyinkronkan cadangan datamu. Kami tidak mengakses kontak, file, atau data Google lainnya. Kamu dapat keluar kapan saja, dan aplikasi tetap berfungsi penuh tanpa akun.</p>
+
+    <h2>3. Sinkronisasi Cloud (Firebase)</h2>
+    <p>Jika kamu masuk, data qadha-mu disimpan di <strong>Google Firebase (Cloud Firestore)</strong> agar dapat disinkronkan antar perangkat. Data ini terkait dengan ID akunmu dan hanya dapat diakses oleh akunmu. Firebase adalah layanan Google; pemrosesan datanya tunduk pada <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Kebijakan Privasi Firebase</a>.</p>
+
+    <h2>4. Notifikasi (Firebase Cloud Messaging)</h2>
+    <p>Jika kamu mengaktifkan pengingat, kami menyimpan sebuah <strong>token notifikasi</strong> beserta preferensi pengingat (jenis pengingat, zona waktu, bahasa, dan jumlah qadha tersisa) untuk mengirim notifikasi terjadwal. Token ini tidak mengidentifikasi dirimu secara pribadi dan dihapus saat kamu mematikan pengingat atau menghapus akun.</p>
+
+    <h2>5. Masukan (Feedback)</h2>
+    <p>Jika kamu mengirim saran melalui fitur masukan, teks yang kamu tulis dikirim ke Firestore agar kami dapat membacanya dan memperbaiki aplikasi. Jangan menyertakan informasi sensitif dalam masukan.</p>
+
+    <h2>6. Data yang TIDAK Kami Kumpulkan</h2>
+    <ul>
+      <li>Lokasi, kontak, atau riwayat penelusuran</li>
+      <li>Data biometrik</li>
+      <li>Kami tidak memuat SDK iklan atau analitik pihak ketiga yang melacakmu antar aplikasi</li>
+    </ul>
+
+    <h2>7. Cadangan &amp; Ekspor</h2>
+    <p>File cadangan (.json) dan ekspor (PDF/CSV) dibuat langsung di perangkatmu dan hanya tersimpan di lokasi yang kamu pilih. Kami tidak menerima salinannya.</p>
+
+    <h2>8. Menghapus Data</h2>
+    <p>Kamu dapat menghapus datamu kapan saja:</p>
+    <ul>
+      <li><strong>Reset Data</strong> di dalam aplikasi mengembalikan progres ke nol.</li>
+      <li><strong>Hapus Akun</strong> menghapus akun beserta data cloud dan lokal secara permanen.</li>
+      <li>Menghapus (uninstall) aplikasi akan menghapus seluruh data lokal.</li>
+    </ul>
+
+    <h2>9. Keamanan</h2>
+    <p>Data lokal berada dalam ruang penyimpanan privat aplikasi yang dilindungi sistem Android. Data cloud dilindungi oleh keamanan infrastruktur Google. Kami menyarankan mengaktifkan kunci layar perangkat untuk perlindungan tambahan.</p>
+
+    <h2>10. Anak-anak</h2>
+    <p>QadhaKu tidak ditujukan secara khusus untuk anak di bawah usia yang diatur hukum setempat, dan kami tidak secara sengaja mengumpulkan data pribadi dari mereka.</p>
+
+    <h2>11. Perubahan Kebijakan</h2>
+    <p>Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Perubahan akan tercermin pada tanggal "Terakhir diperbarui" di atas.</p>
+
+    <h2>12. Kontak</h2>
+    <p>Untuk pertanyaan seputar privasi, hubungi kami di:<br>
+    <strong><a href="mailto:GANTI_DENGAN_EMAIL_KAMU">GANTI_DENGAN_EMAIL_KAMU</a></strong></p>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section id="en" hidden>
+    <p class="muted" style="text-align:center; margin-top:20px;">Last updated: 24 July 2026</p>
+
+    <div class="card">
+      <p>QadhaKu ("the app", "we") is an application that helps users calculate, track, and complete their qadha (make-up) prayers and fasts. We respect your privacy. This policy explains what data we handle, how it is used, and your rights.</p>
+    </div>
+
+    <h2>1. Data We Store</h2>
+    <p>By default, QadhaKu stores your data in your <strong>device's local storage</strong>, including:</p>
+    <ul>
+      <li>Qadha prayer and qadha fasting records</li>
+      <li>Daily targets and progress</li>
+      <li>Reminder, theme, and language settings</li>
+      <li>The name you enter and guide bookmarks</li>
+    </ul>
+    <p>This data stays on your device unless you choose to sign in for cloud sync.</p>
+
+    <h2>2. Google Account (Optional)</h2>
+    <p>If you choose to sign in with Google, we read your <strong>name and email address</strong> to display your profile and sync your backup. We do not access your contacts, files, or other Google data. You can sign out at any time, and the app remains fully functional without an account.</p>
+
+    <h2>3. Cloud Sync (Firebase)</h2>
+    <p>If you sign in, your qadha data is stored in <strong>Google Firebase (Cloud Firestore)</strong> so it can sync across your devices. This data is tied to your account ID and accessible only by your account. Firebase is a Google service; its data processing is subject to the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</p>
+
+    <h2>4. Notifications (Firebase Cloud Messaging)</h2>
+    <p>If you enable reminders, we store a <strong>notification token</strong> along with reminder preferences (reminder types, time zone, language, and remaining qadha count) to send scheduled notifications. This token does not personally identify you and is deleted when you turn off reminders or delete your account.</p>
+
+    <h2>5. Feedback</h2>
+    <p>If you send feedback through the in-app feature, the text you write is sent to Firestore so we can read it and improve the app. Please do not include sensitive information in feedback.</p>
+
+    <h2>6. Data We DO NOT Collect</h2>
+    <ul>
+      <li>Location, contacts, or browsing history</li>
+      <li>Biometric data</li>
+      <li>We include no third-party advertising or analytics SDKs that track you across apps</li>
+    </ul>
+
+    <h2>7. Backup &amp; Export</h2>
+    <p>Backup (.json) and export (PDF/CSV) files are created directly on your device and saved only where you choose. We never receive a copy.</p>
+
+    <h2>8. Deleting Your Data</h2>
+    <ul>
+      <li><strong>Reset Data</strong> in the app returns your progress to zero.</li>
+      <li><strong>Delete Account</strong> permanently removes your account along with cloud and local data.</li>
+      <li>Uninstalling the app deletes all local data.</li>
+    </ul>
+
+    <h2>9. Security</h2>
+    <p>Local data resides in the app's private storage protected by the Android system. Cloud data is protected by Google's infrastructure security. We recommend enabling your device screen lock for extra protection.</p>
+
+    <h2>10. Children</h2>
+    <p>QadhaKu is not specifically directed at children below the age set by local law, and we do not knowingly collect personal data from them.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be reflected in the "Last updated" date above.</p>
+
+    <h2>12. Contact</h2>
+    <p>For privacy questions, contact us at:<br>
+    <strong><a href="mailto:GANTI_DENGAN_EMAIL_KAMU">GANTI_DENGAN_EMAIL_KAMU</a></strong></p>
+  </section>
+
+  <div class="divider"></div>
+  <p class="muted" style="text-align:center;">&copy; 2026 QadhaKu</p>
+</div>
+
+<script>
+  function setLang(l) {
+    document.getElementById('id').hidden = (l !== 'id');
+    document.getElementById('en').hidden = (l !== 'en');
+    document.getElementById('btn-id').classList.toggle('active', l === 'id');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+    window.scrollTo(0, 0);
+  }
+</script>
+</body>
+</html>
